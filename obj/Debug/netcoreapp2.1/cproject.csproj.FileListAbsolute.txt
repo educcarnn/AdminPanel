@@ -46,15 +46,8 @@ D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.AssemblyInfo.cs
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.TagHelpers.input.cache
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.TagHelpers.output.cache
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.RazorCoreGenerate.cache
-D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
-D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
-D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
-D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
-D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.RazorTargetAssemblyInfo.cache
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.RazorTargetAssemblyInfo.cs
@@ -62,3 +55,4 @@ D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.Views.pdb
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.dll
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.pdb
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.csproj.CopyComplete
+D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_MainMenu.g.cshtml.cs
