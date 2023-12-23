@@ -56,4 +56,7 @@ D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.dll
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.pdb
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\cproject.csproj.CopyComplete
 D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_MainMenu.g.cshtml.cs
-D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Teste.g.cshtml.cs
+D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Mensagens\Create.g.cshtml.cs
+D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Mensagens\Delete.g.cshtml.cs
+D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Mensagens\Edit.g.cshtml.cs
+D:\Projetos\C#\cproject\obj\Debug\netcoreapp2.1\Razor\Views\Mensagens\Index.g.cshtml.cs

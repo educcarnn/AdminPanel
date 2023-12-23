@@ -1,0 +1,11 @@
+<h2>Nova Mensagem</h2>
+
+<form id="createForm" asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Conteudo"></label>
+        <input asp-for="Conteudo" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+<a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>

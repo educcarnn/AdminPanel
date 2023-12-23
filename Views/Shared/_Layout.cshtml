@@ -25,7 +25,7 @@
     <!-- Main Header -->
     <header class="main-header">
       <!-- Logo -->
-      <a href="index2.html" class="logo">
+      <a  class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>AP</span>
         <!-- logo for regular state and mobile devices -->
@@ -98,11 +98,20 @@
           </div>
         </div>
 
-
-        <!-- /.search form -->
-        <!-- Sidebar Menu -->
-        @Html.Partial("_MainMenu")
-
+        <!-- Sidebar Menu 
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">Menu Principal</li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-envelope"></i> <span>Mensagens</span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a asp-controller="Mensagens" asp-action="Index"><i class="fa fa-list"></i> Listar Mensagens</a></li>
+              <li><a asp-controller="Mensagens" asp-action="Create"><i class="fa fa-plus"></i> Nova Mensagem</a></li>
+            </ul>
+          </li>
+        </ul>
+        -->
         <!-- /.sidebar-menu -->
       </section>
       <!-- /.sidebar -->
