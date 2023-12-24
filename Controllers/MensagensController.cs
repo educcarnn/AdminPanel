@@ -3,7 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 
-public class MensagensController : Controller
+[Route("api/[controller]")]
+[ApiController]
+public class MensagensController : ControllerBase
 {
     private readonly MeuDbContext _context;
 
@@ -12,52 +14,36 @@ public class MensagensController : Controller
         _context = context;
     }
 
-    public async Task<IActionResult> Index()
+    // Listar todas as mensagens
+    [HttpGet]
+    public async Task<IActionResult> Get()
     {
         var mensagens = await _context.Mensagens.ToListAsync();
-        return View(mensagens);
+        return Ok(mensagens);
     }
 
-    public IActionResult Create()
-    {
-        return View();
-    }
-
+    // Criar uma nova mensagem
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Conteudo")] Mensagem mensagem)
+  
+    public async Task<IActionResult> Create([FromBody] Mensagem mensagem)
     {
         if (ModelState.IsValid)
         {
             _context.Add(mensagem);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return CreatedAtAction(nameof(Get), new { id = mensagem.Id }, mensagem);
         }
-        return View(mensagem);
+        return BadRequest(ModelState);
     }
 
-    public async Task<IActionResult> Edit(int? id)
-    {
-        if (id == null)
-        {
-            return NotFound();
-        }
+    // Editar uma mensagem existente
+    [HttpPut("{id}")]
 
-        var mensagem = await _context.Mensagens.FindAsync(id);
-        if (mensagem == null)
-        {
-            return NotFound();
-        }
-        return View(mensagem);
-    }
-
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,Conteudo")] Mensagem mensagem)
+    public async Task<IActionResult> Edit(int id, [FromBody] Mensagem mensagem)
     {
         if (id != mensagem.Id)
         {
-            return NotFound();
+            return BadRequest();
         }
 
         if (ModelState.IsValid)
@@ -78,36 +64,25 @@ public class MensagensController : Controller
                     throw;
                 }
             }
-            return RedirectToAction(nameof(Index));
+            return Ok(mensagem);
         }
-        return View(mensagem);
+        return BadRequest(ModelState);
     }
 
-    public async Task<IActionResult> Delete(int? id)
-    {
-        if (id == null)
-        {
-            return NotFound();
-        }
+    // Excluir uma mensagem
+    [HttpDelete("{id}")]
 
-        var mensagem = await _context.Mensagens
-            .FirstOrDefaultAsync(m => m.Id == id);
+    public async Task<IActionResult> Delete(int id)
+    {
+        var mensagem = await _context.Mensagens.FindAsync(id);
         if (mensagem == null)
         {
             return NotFound();
         }
 
-        return View(mensagem);
-    }
-
-    [HttpPost, ActionName("Delete")]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteConfirmed(int id)
-    {
-        var mensagem = await _context.Mensagens.FindAsync(id);
         _context.Mensagens.Remove(mensagem);
         await _context.SaveChangesAsync();
-        return RedirectToAction(nameof(Index));
+        return NoContent();
     }
 
     private bool MensagemExists(int id)
