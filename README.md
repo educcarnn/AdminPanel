@@ -32,7 +32,7 @@ Para executar o projeto, entre na pasta do arquivo do projeto e execute os coman
     #O comando a seguir não é necessário, somente em caso do dump estiver com erro, para criar as migrations 
     dotnet ef migrations add NomeDaMigracao
 
-    # Em seguida, para atualizar com as novas migrations
+    # Em seguida, para atualizar o banco de dados com as novas migrations
     dotnet ef database update
 
 
