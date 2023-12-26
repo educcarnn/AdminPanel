@@ -1,4 +1,0 @@
-CREATE TABLE Mensagens (
-    Id INT PRIMARY KEY AUTO_INCREMENT,
-    Conteudo VARCHAR(255) NOT NULL
-);
