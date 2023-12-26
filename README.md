@@ -1,7 +1,8 @@
 # Crud de Mensagens em ASP NET 2.1 com Razor e AdminLTE - AdminPanel
 
+**Tecnologias:** 
+
 ```
-Tecnologias: 
 ASP NET 2.1
 MySQL 8+
 Razor Engine
@@ -17,8 +18,10 @@ Para executar o projeto, entre na pasta do arquivo do projeto e execute os coman
 2 - Após isso, entre no terminal de projeto, execute a série de comandos a seguir
 ```
 
-**Rodar o Asp Net 2.1**
+**Rodar o ASP NET 2.1**
 ```
+(Terminal usado Gitbash, os comandos variam entre terminais)
+
 # Mude as credencias com seu banco de dados local em appsettings.json
     1° Deve ser gerado o banco de dados local e importar o dump, com as seguintes orientações
     CREATE DATABASE teste(nome do banco de dados); - Através do terminal do MySql
@@ -26,14 +29,14 @@ Para executar o projeto, entre na pasta do arquivo do projeto e execute os coman
     2° Após isso, utilize algum gerenciador de banco de dados como Dbeaver, faça a conexão e import o Dump 
 
 
-#O comando a seguir não é necessário, somente em caso do dump estiver com erro, para criar as migrations 
-dotnet ef migrations add NomeDaMigracao
+    #O comando a seguir não é necessário, somente em caso do dump estiver com erro, para criar as migrations 
+    dotnet ef migrations add NomeDaMigracao
 
-# Em seguida para atualizar com as novas migrations
-dotnet ef database update
+    # Em seguida, para atualizar com as novas migrations
+    dotnet ef database update
 
 
-# Build do projeto(Terminal usado Gitbash, os comandos variam entre terminais)
+# Build do projeto
 dotnet build
 
 # Rodar o servidor
