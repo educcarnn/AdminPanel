@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AdminPanel.Migrations
@@ -29,7 +28,6 @@ namespace AdminPanel.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(maxLength: 60, nullable: false),
                     Email = table.Column<string>(nullable: false),
-                    BirthDate = table.Column<DateTime>(nullable: false),
                     Mensagem = table.Column<string>(maxLength: 140, nullable: false),
                     TipoId = table.Column<int>(nullable: false)
                 },

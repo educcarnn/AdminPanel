@@ -1,7 +1,7 @@
+D:\Projetos\C#\AdminPanel\bin\Debug\netcoreapp2.1\AdminPanel.dll
 D:\Projetos\C#\AdminPanel\bin\Debug\netcoreapp2.1\AdminPanel.deps.json
 D:\Projetos\C#\AdminPanel\bin\Debug\netcoreapp2.1\AdminPanel.runtimeconfig.json
 D:\Projetos\C#\AdminPanel\bin\Debug\netcoreapp2.1\AdminPanel.runtimeconfig.dev.json
-D:\Projetos\C#\AdminPanel\bin\Debug\netcoreapp2.1\AdminPanel.dll
 D:\Projetos\C#\AdminPanel\bin\Debug\netcoreapp2.1\AdminPanel.pdb
 D:\Projetos\C#\AdminPanel\bin\Debug\netcoreapp2.1\AdminPanel.Views.dll
 D:\Projetos\C#\AdminPanel\bin\Debug\netcoreapp2.1\AdminPanel.Views.pdb

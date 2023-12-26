@@ -20,12 +20,6 @@ namespace AdminPanel.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "{0} required")]
-        [Display(Name = "Birth Date")]
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime BirthDate { get; set; }
-
-        [Required(ErrorMessage = "{0} required")]
         [Display(Name = "Mensagem")]
         [StringLength(140, MinimumLength = 3, ErrorMessage = "{0} size should be between {2} and {1}")]
         public string Mensagem { get; set; }
@@ -37,12 +31,11 @@ namespace AdminPanel.Models
 
         public Message() { }
 
-        public Message(int id, string name, string email, DateTime birthDate, string mensagem, Tipo tipo)
+        public Message(int id, string name, string email, string mensagem, Tipo tipo)
         {
             Id = id;
             Name = name;
             Email = email;
-            BirthDate = birthDate;
             Mensagem = mensagem;
             Tipo = tipo;
         }
