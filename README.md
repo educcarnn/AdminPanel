@@ -18,7 +18,7 @@ Para executar o projeto, entre na pasta do arquivo do projeto e execute os coman
 2 - Após isso, entre no terminal de projeto, execute a série de comandos a seguir
 ```
 
-**Rodar o ASP NET 2.1**
+**Rodar o ASP NET 2.1 e configurar banco de dados**
 ```
 (Terminal usado Gitbash, os comandos variam entre terminais)
 
